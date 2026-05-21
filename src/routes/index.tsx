@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroGrill from "@/assets/hero-grill.jpg";
+import logo from "@/assets/chez-manman-logo.jpg";
 import dishBokit from "@/assets/dish-bokit.jpg";
 import dishBrochettes from "@/assets/dish-brochettes.jpg";
 import dishGrill from "@/assets/dish-grill.jpg";
@@ -38,7 +39,7 @@ function Index() {
       {/* NAV */}
       <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
-          <span className="font-script text-3xl text-gold-gradient leading-none">Chez Manman</span>
+          <img src={logo} alt="Chez Manman" className="h-10 md:h-12 w-auto object-contain" />
           <div className="hidden md:flex gap-10 font-display text-sm uppercase tracking-[0.25em] text-foreground/70">
             <a href="#carte" className="hover:text-[var(--gold-bright)] transition-colors">La Carte</a>
             <a href="#histoire" className="hover:text-[var(--gold-bright)] transition-colors">L'Histoire</a>
@@ -70,9 +71,7 @@ function Index() {
           <p className="font-display text-xs md:text-sm uppercase tracking-[0.5em] text-[var(--gold)] mb-8">
             Cuisine Antillaise · Depuis 1998
           </p>
-          <h1 className="font-script text-7xl md:text-[180px] leading-[0.85] text-gold-gradient mb-6">
-            Chez Manman
-          </h1>
+          <img src={logo} alt="Chez Manman" className="mx-auto mb-6 w-full max-w-[280px] md:max-w-[760px] h-auto" />
           <div className="flex items-center justify-center gap-4 md:gap-8 font-display text-lg md:text-3xl uppercase tracking-[0.2em] text-secondary mb-12">
             <span>Bokit</span>
             <span className="text-[var(--gold)]">·</span>
@@ -206,7 +205,7 @@ function Index() {
       {/* FOOTER */}
       <footer className="border-t border-border py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <span className="font-script text-2xl text-gold-gradient">Chez Manman</span>
+          <img src={logo} alt="Chez Manman" className="h-8 w-auto object-contain" />
           <p className="font-display text-[10px] uppercase tracking-[0.3em] text-foreground/50">
             © 2026 · Fait avec amour en Guadeloupe
           </p>
