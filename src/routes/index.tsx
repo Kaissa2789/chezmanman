@@ -39,7 +39,7 @@ function Index() {
       {/* NAV */}
       <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
-          <img src={logo} alt="Chez Manman" className="h-10 md:h-12 w-auto object-contain" />
+          <img src={logo} alt="Chez Manman" className="h-10 md:h-12 w-auto object-contain mix-blend-screen" />
           <div className="hidden md:flex gap-10 font-display text-sm uppercase tracking-[0.25em] text-foreground/70">
             <a href="#carte" className="hover:text-[var(--gold-bright)] transition-colors">La Carte</a>
             <a href="#histoire" className="hover:text-[var(--gold-bright)] transition-colors">L'Histoire</a>
@@ -71,7 +71,7 @@ function Index() {
           <p className="font-display text-xs md:text-sm uppercase tracking-[0.5em] text-[var(--gold)] mb-8">
             Cuisine Antillaise · Depuis 1998
           </p>
-          <img src={logo} alt="Chez Manman" className="mx-auto mb-6 w-full max-w-[280px] md:max-w-[760px] h-auto" />
+          <img src={logo} alt="Chez Manman" className="mx-auto mb-6 w-full max-w-[280px] md:max-w-[760px] h-auto mix-blend-screen" />
           <div className="flex items-center justify-center gap-4 md:gap-8 font-display text-lg md:text-3xl uppercase tracking-[0.2em] text-secondary mb-12">
             <span>Bokit</span>
             <span className="text-[var(--gold)]">·</span>
