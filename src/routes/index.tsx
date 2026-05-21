@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroGrill from "@/assets/hero-grill.jpg";
-import logo from "@/assets/chez-manman-logo.jpg";
+import logo from "@/assets/chez-manman-logo.png";
 import dishBokit from "@/assets/dish-bokit.jpg";
 import dishBrochettes from "@/assets/dish-brochettes.jpg";
 import dishGrill from "@/assets/dish-grill.jpg";
