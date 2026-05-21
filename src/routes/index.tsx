@@ -114,7 +114,7 @@ function Index() {
             </div>
             <p className="max-w-md text-foreground/70 leading-relaxed">
               Trois plats, trois mémoires. Chaque assiette raconte un voyage entre Pointe-à-Pitre
-              et la table de Manman.
+              et la table de Chez Manman.
             </p>
           </div>
 
