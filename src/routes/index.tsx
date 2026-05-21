@@ -172,18 +172,17 @@ function Index() {
             <p className="font-display text-[11px] uppercase tracking-[0.3em] text-[var(--gold)] mb-4">Adresse</p>
             <p className="font-script text-3xl text-gold-gradient mb-2">Venez nous voir</p>
             <p className="text-foreground/75 leading-relaxed">
-              14, rue des Flamboyants<br />
-              97110 Pointe-à-Pitre<br />
-              Guadeloupe
+              2, avenue de Chany - La Varenne Saint Hilaire<br />
+              94210 Saint-Maur-des-Fossés
             </p>
           </div>
           <div>
             <p className="font-display text-[11px] uppercase tracking-[0.3em] text-[var(--gold)] mb-4">Service</p>
             <p className="font-script text-3xl text-gold-gradient mb-2">Heures d'ouverture</p>
             <div className="text-foreground/75 space-y-2 text-sm">
-              <div className="flex justify-between border-b border-border pb-1.5"><span>Mar — Jeu</span><span>18h — 23h</span></div>
-              <div className="flex justify-between border-b border-border pb-1.5"><span>Ven — Sam</span><span>18h — 01h</span></div>
-              <div className="flex justify-between border-b border-border pb-1.5"><span>Dimanche</span><span>12h — 16h</span></div>
+              <div className="border-b border-border pb-1.5 items-start justify-between flex flex-row"><span>Mar — Jeu</span><span>18h — 23h</span></div>
+              <div className="border-b border-border pb-1.5 items-start justify-between flex flex-row"><span>Ven — Sam</span><span>18h — 01h</span></div>
+              <div className="border-b border-border pb-1.5 items-start justify-between flex flex-row"><span>Dimanche</span><span>12h — 16h</span></div>
               <div className="flex justify-between"><span>Lundi</span><span className="text-[var(--gold)]/70">Fermé</span></div>
             </div>
           </div>
@@ -191,11 +190,11 @@ function Index() {
             <p className="font-display text-[11px] uppercase tracking-[0.3em] text-[var(--gold)] mb-4">Réservations</p>
             <p className="font-script text-3xl text-gold-gradient mb-2">Téléphone</p>
             <p className="text-foreground/75 leading-relaxed mb-6">
-              +590 590 12 34 56<br />
-              bonjour@chezmanman.gp
+              2, avenue de Chany - La Varenne Saint Hilaire<br />
+              94210 Saint-Maur-des-Fossés
             </p>
             <a
-              href="tel:+590590123456"
+              href="tel:+33 7 82 19 83 33"
               className="inline-block font-display text-sm uppercase tracking-[0.25em] px-6 py-3 bg-[var(--gold)] text-[var(--primary-foreground)] hover:bg-[var(--gold-bright)] transition-colors rounded-sm"
             >
               Appeler maintenant
