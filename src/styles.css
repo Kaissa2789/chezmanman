@@ -62,26 +62,33 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --radius: 0.25rem;
+  /* Chez Manman: deep emerald + brushed gold + warm sand */
+  --background: oklch(0.28 0.06 165);          /* deep emerald */
+  --foreground: oklch(0.94 0.04 85);           /* warm cream */
+  --card: oklch(0.24 0.05 165);
+  --card-foreground: oklch(0.94 0.04 85);
+  --popover: oklch(0.24 0.05 165);
+  --popover-foreground: oklch(0.94 0.04 85);
+  --primary: oklch(0.78 0.13 82);              /* gold */
+  --primary-foreground: oklch(0.22 0.05 165);
+  --secondary: oklch(0.88 0.07 85);            /* sand */
+  --secondary-foreground: oklch(0.22 0.05 165);
+  --muted: oklch(0.32 0.05 165);
+  --muted-foreground: oklch(0.78 0.04 85);
+  --accent: oklch(0.65 0.18 35);               /* ember red */
+  --accent-foreground: oklch(0.96 0.02 85);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.96 0.02 85);
+  --border: oklch(0.78 0.13 82 / 0.25);
+  --input: oklch(0.78 0.13 82 / 0.25);
+  --ring: oklch(0.78 0.13 82);
+  --gold: oklch(0.78 0.13 82);
+  --gold-bright: oklch(0.86 0.14 88);
+  --emerald-deep: oklch(0.22 0.06 165);
+  --sand: oklch(0.88 0.07 85);
+  --gradient-gold: linear-gradient(135deg, oklch(0.72 0.12 78), oklch(0.88 0.14 88), oklch(0.7 0.12 75));
+  --shadow-warm: 0 30px 60px -20px oklch(0 0 0 / 0.5);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,5 +147,24 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  .font-script {
+    font-family: "Allura", "Great Vibes", cursive;
+    font-weight: 400;
+  }
+
+  .font-display {
+    font-family: "Bebas Neue", "Inter", sans-serif;
+    letter-spacing: 0.02em;
+  }
+
+  .text-gold-gradient {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 2px 4px oklch(0 0 0 / 0.4));
   }
 }
