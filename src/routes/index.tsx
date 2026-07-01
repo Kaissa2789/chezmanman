@@ -14,20 +14,20 @@ const dishes = [
     name: "Le Bokit",
     tagline: "Pain frit · poulet boucané · crudités",
     desc: "Notre bokit signature — pâte frite dorée, poulet mariné au colombo, salade fraîche et sauce chien maison.",
-    price: "12€",
+    price: "8€",
     img: dishBokit,
   },
   {
-    name: "Brochettes Flambées",
+    name: "Brochettes",
     tagline: "Boeuf mariné · épices créoles",
-    desc: "Brochettes grillées sur braises de bois, marinade au rhum vieux, piment doux et bois d'inde.",
+    desc: "Brochettes grillées sur braises de bois, marinade maison, piment doux et bois d'inde.",
     price: "16€",
     img: dishBrochettes,
   },
   {
     name: "Poulet Boucané",
-    tagline: "Riz colombo · haricots rouges · bananes",
-    desc: "Poulet fumé lentement à la canne à sucre, servi avec riz épicé et bananes plantain caramélisées.",
+    tagline: "Riz ou frites · salade",
+    desc: "Poulet fumé lentement au charbon de bois, servi avec riz ou frites et une salade fraîche.",
     price: "18€",
     img: dishGrill,
   },
@@ -69,7 +69,7 @@ function Index() {
 
         <div className="max-w-7xl mx-auto px-6 pt-20 pb-32 md:pt-32 md:pb-44 text-center">
           <p className="font-display text-xs md:text-sm uppercase tracking-[0.5em] text-[var(--gold)] mb-8">
-            Cuisine Antillaise · Depuis 1998
+            Cuisine Antillaise
           </p>
           <img src={logo} alt="Chez Manman" className="mx-auto mb-6 w-full max-w-[280px] md:max-w-[760px] h-auto mix-blend-screen" />
           <div className="flex items-center justify-center gap-4 md:gap-8 font-display text-lg md:text-3xl uppercase tracking-[0.2em] text-secondary mb-12">
@@ -80,8 +80,8 @@ function Index() {
             <span>Grill</span>
           </div>
           <p className="max-w-xl mx-auto text-base md:text-lg text-foreground/70 leading-relaxed mb-12">
-            La cuisine de Guadeloupe comme à la maison. Braises de bois, épices vraies,
-            recettes transmises de mère en fille depuis trois générations.
+            Frais, authentique, fait avec amour comme chez ta mère. Bokits et grillades
+            au barbecue portugais, charbon de bois, viande fraîche, jamais congelée.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
@@ -145,22 +145,172 @@ function Index() {
         </div>
       </section>
 
+      {/* VALEURS */}
+      <section className="py-24 md:py-32 px-6 border-t border-border">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="font-display text-xs uppercase tracking-[0.4em] text-[var(--gold)] mb-4">
+              Nos Valeurs
+            </p>
+            <h2 className="font-script text-5xl md:text-6xl text-gold-gradient leading-none">
+              Ce qui nous rend différents
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-card/50 border border-border rounded-sm p-8">
+              <span className="inline-block font-display text-[10px] uppercase tracking-[0.2em] px-3 py-1 bg-[var(--gold)]/10 text-[var(--gold)] rounded-full mb-4">
+                Qualité
+              </span>
+              <h3 className="font-script text-2xl text-gold-gradient mb-2">100% frais. 0% congelé.</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                La viande arrive fraîche chaque matin. Préparation maison, cuisson au barbecue
+                portugais sur charbon de bois. Steve supervise chaque plat. Ici, rien ne sort
+                d'un congélateur.
+              </p>
+            </div>
+
+            <div className="bg-card/50 border border-border rounded-sm p-8">
+              <span className="inline-block font-display text-[10px] uppercase tracking-[0.2em] px-3 py-1 bg-[var(--gold)]/10 text-[var(--gold)] rounded-full mb-4">
+                Authenticité
+              </span>
+              <h3 className="font-script text-2xl text-gold-gradient mb-2">Recettes antillaises, goût d'origine</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                Les recettes viennent de là-bas. Transmises, pas inventées. Le barbecue portugais
+                au charbon donne le goût fumé authentique qu'aucun four ne peut reproduire.
+              </p>
+            </div>
+
+            <div className="bg-card/50 border border-border rounded-sm p-8">
+              <span className="inline-block font-display text-[10px] uppercase tracking-[0.2em] px-3 py-1 bg-[var(--gold)]/10 text-[var(--gold)] rounded-full mb-4">
+                Prix
+              </span>
+              <h3 className="font-script text-2xl text-gold-gradient mb-2">Le meilleur rapport qualité prix</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                Bokit à 8€. Formule bokit + boisson à 10€. Menu famille 4 bokits + 4 boissons à 35€.
+                Halal certifié. Tu manges bien sans te ruiner.
+              </p>
+            </div>
+
+            <div className="bg-card/50 border border-border rounded-sm p-8">
+              <span className="inline-block font-display text-[10px] uppercase tracking-[0.2em] px-3 py-1 bg-[var(--gold)]/10 text-[var(--gold)] rounded-full mb-4">
+                Proximité
+              </span>
+              <h3 className="font-script text-2xl text-gold-gradient mb-2">Comme à la maison</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                On t'accueille comme on accueillerait de la famille. Pas de chichis, pas de
+                formalités. Tu viens, tu manges bien, tu repars le sourire aux lèvres. C'est ça
+                l'esprit Chez Manman.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* HISTOIRE */}
       <section id="histoire" className="py-24 md:py-32 px-6 bg-[var(--emerald-deep)]">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="font-display text-xs uppercase tracking-[0.4em] text-[var(--gold)] mb-8">
-            L'Histoire
+        <div className="max-w-4xl mx-auto">
+          <p className="font-display text-xs uppercase tracking-[0.4em] text-[var(--gold)] mb-8 text-center">
+            Notre Histoire
           </p>
-          <p className="font-script text-4xl md:text-6xl text-gold-gradient leading-tight mb-12">
-            « Le secret, c'est le feu — et l'amour qu'on met dedans. »
-          </p>
-          <div className="h-px w-24 bg-[var(--gold)]/40 mx-auto mb-12" />
-          <p className="text-lg md:text-xl text-foreground/70 leading-relaxed max-w-3xl mx-auto">
-            Manman Joséphine a ouvert sa première cabane à bokit sur la plage de Sainte-Anne
-            en 1998. Aujourd'hui, ses filles perpétuent les mêmes gestes, les mêmes marinades,
-            la même générosité — au cœur du quartier.
-          </p>
-          <p className="mt-10 font-script text-3xl text-[var(--gold-bright)]">— Joséphine, Sandra & Élodie</p>
+          <h3 className="font-script text-3xl md:text-5xl text-gold-gradient leading-tight mb-12 text-center">
+            Pendant 3 ans, les gens faisaient la queue pour un food truck sans nom.
+          </h3>
+          <div className="space-y-6 text-foreground/70 text-base md:text-lg leading-relaxed">
+            <p>
+              Avant d'être un restaurant, Chez Manman c'était un food truck rouge. Pas d'enseigne,
+              pas de logo, pas de page Instagram. Juste Steve, son grill au charbon, et ses bokits.
+            </p>
+            <p>
+              Les gens venaient quand même. Ils se passaient le mot. « T'as goûté le bokit du camion
+              rouge à côté du marché ? » Le bouche à oreille, c'est tout ce qu'il avait. Et c'était
+              suffisant.
+            </p>
+            <p>
+              La file grandissait. Les habitués revenaient chaque semaine. Et un jour, ce sont eux
+              qui ont dit : « Steve, ouvre un vrai restaurant. » Pas un investisseur. Pas un business
+              plan. Ses clients.
+            </p>
+            <p>
+              Alors il l'a fait. Il a trouvé un local à Saint-Maur-des-Fossés. Il a gardé la même
+              viande fraîche, le même charbon de bois, les mêmes recettes. Il a juste ajouté des murs
+              et un nom : Chez Manman.
+            </p>
+            <p>
+              Pourquoi Manman ? Parce que c'est comme ça qu'on dit « maman » aux Antilles. Et parce
+              que chaque plat qui sort de cette cuisine est fait comme si c'était ta mère qui
+              cuisinait. Avec du temps, des vrais produits, et de l'amour dedans.
+            </p>
+            <div className="border-l-2 border-[var(--gold)] pl-6 py-2 my-10">
+              <p className="font-script text-2xl md:text-3xl text-gold-gradient">
+                Chez Manman, c'est une promesse : tu vas manger comme chez ta mère.
+              </p>
+              <p className="mt-3 font-display text-xs uppercase tracking-[0.2em] text-[var(--gold)]/70">
+                — Steve, fondateur
+              </p>
+            </div>
+            <p>
+              Aujourd'hui, on fait exactement la même chose qu'avant. On cuit au charbon, on prépare
+              tout frais, on met de l'amour dedans. La seule différence, c'est que maintenant, t'as
+              une chaise pour t'asseoir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* TÉMOIGNAGES */}
+      <section className="py-24 md:py-32 px-6 bg-[var(--emerald-deep)]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="font-display text-xs uppercase tracking-[0.4em] text-[var(--gold)] mb-4">
+              Témoignages
+            </p>
+            <h2 className="font-script text-4xl md:text-5xl text-gold-gradient leading-tight">
+              La première bouchée, c'est toujours la même réaction.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="border-l-2 border-[var(--gold)] pl-6 py-2">
+              <p className="text-foreground/80 text-base leading-relaxed italic">
+                J'ai goûté par curiosité. Maintenant j'y vais toutes les semaines. La viande est
+                dingue, le pain est parfait. Y'a rien de comparable dans le 94.
+              </p>
+              <p className="mt-4 font-display text-xs uppercase tracking-[0.15em] text-[var(--gold)]">
+                — Kevin, Créteil
+              </p>
+            </div>
+
+            <div className="border-l-2 border-[var(--gold)] pl-6 py-2">
+              <p className="text-foreground/80 text-base leading-relaxed italic">
+                Halal, frais, fait maison. Un bokit c'est comme un sandwich mais 10 fois meilleur.
+                Mes enfants en redemandent à chaque fois.
+              </p>
+              <p className="mt-4 font-display text-xs uppercase tracking-[0.15em] text-[var(--gold)]">
+                — Fatou, Champigny
+              </p>
+            </div>
+
+            <div className="border-l-2 border-[var(--gold)] pl-6 py-2">
+              <p className="text-foreground/80 text-base leading-relaxed italic">
+                J'ai découvert le bokit grâce à une amie. Honnêtement, je savais même pas que ça
+                existait. Maintenant c'est mon truc du vendredi soir.
+              </p>
+              <p className="mt-4 font-display text-xs uppercase tracking-[0.15em] text-[var(--gold)]">
+                — Sophie, Saint-Maur
+              </p>
+            </div>
+
+            <div className="border-l-2 border-[var(--gold)] pl-6 py-2">
+              <p className="text-foreground/80 text-base leading-relaxed italic">
+                Menu famille à 35€. Quatre bokits, quatre boissons. Toute la famille a mangé.
+                On reviendra.
+              </p>
+              <p className="mt-4 font-display text-xs uppercase tracking-[0.15em] text-[var(--gold)]">
+                — Marc, Joinville
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -179,9 +329,7 @@ function Index() {
             <p className="font-display text-[11px] uppercase tracking-[0.3em] text-[var(--gold)] mb-4">Service</p>
             <p className="font-script text-3xl text-gold-gradient mb-2">Heures d'ouverture</p>
             <div className="text-foreground/75 space-y-2 text-sm">
-              <div className="border-b border-border pb-1.5 items-start justify-between flex flex-row"><span>Mar — Jeu</span><span>18h — 23h</span></div>
-              <div className="border-b border-border pb-1.5 items-start justify-between flex flex-row"><span>Ven — Sam</span><span>18h — 01h</span></div>
-              <div className="border-b border-border pb-1.5 items-start justify-between flex flex-row"><span>Dimanche</span><span>12h — 16h</span></div>
+              <div className="border-b border-border pb-1.5 items-start justify-between flex flex-row"><span>Mar — Dim</span><span>12h — 15h · 19h — 23h</span></div>
               <div className="flex justify-between"><span>Lundi</span><span className="text-[var(--gold)]/70">Fermé</span></div>
             </div>
           </div>
@@ -207,7 +355,7 @@ function Index() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <img src={logo} alt="Chez Manman" className="h-8 w-auto object-contain" />
           <p className="font-display text-[10px] uppercase tracking-[0.3em] text-foreground/50">
-            © 2026 · Fait avec amour en Guadeloupe
+            Chez Manman
           </p>
         </div>
       </footer>
