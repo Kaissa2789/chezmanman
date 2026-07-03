@@ -128,8 +128,7 @@ function Index() {
               </h2>
             </div>
             <p className="max-w-md text-foreground/70 leading-relaxed">
-              Trois plats, trois mémoires. Chaque assiette raconte un voyage entre Pointe-à-Pitre
-              et la table de Chez Manman.
+             Nos plats signature, une seule promesse : le goût authentique des Antilles, de Pointe-à-Pitre jusqu'à votre assiette.
             </p>
           </div>
 
