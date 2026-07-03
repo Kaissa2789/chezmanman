@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroGrill from "@/assets/hero-grill.jpg";
 import logo from "@/assets/chez-manman-logo.png";
 import dishBokit from "@/assets/dish-bokit.jpg";
+import dishPoisson from '../assets/dish-poisson.jpg';
+import dishPouletGrille from '../assets/dish-poulet-grille.jpg';
 import dishBrochettes from "@/assets/dish-brochettes.jpg";
 import dishGrill from "@/assets/dish-grill.jpg";
 
@@ -31,8 +33,21 @@ const dishes = [
     price: "18€",
     img: dishGrill,
   },
+{
+    name: "Poisson Boucané",
+    tagline: "Poisson fumé · riz ou frites · salade",
+    desc: "Poisson fumé à l'ancienne, mariné dans nos épices maison, accompagné de riz ou de frites et d'une salade fraîche.",
+    price: "16€",
+    img: dishPoisson,
+  },
+  {
+    name: "Poulet Grillé",
+    tagline: "Poulet mariné · grillade au charbon",
+    desc: "Poulet mariné longuement dans nos épices maison, grillé au feu de charbon pour un goût fumé et authentique.",
+    price: "16€",
+    img: dishPouletGrille,
+  },
 ];
-
 function Index() {
   return (
     <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
