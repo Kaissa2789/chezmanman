@@ -335,7 +335,7 @@ function Index() {
             <p className="font-display text-[11px] uppercase tracking-[0.3em] text-[var(--gold)] mb-4">Adresse</p>
             <p className="font-script text-3xl text-gold-gradient mb-2">Venez nous voir</p>
             <p className="text-foreground/75 leading-relaxed">
-              2, avenue de Chany - La Varenne Saint Hilaire<br />
+              2 bis, avenue de Chanzy - La Varenne Saint Hilaire<br />
               94210 Saint-Maur-des-Fossés
             </p>
           </div>
