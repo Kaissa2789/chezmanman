@@ -6,6 +6,7 @@ import dishPoisson from '../assets/dish-poisson.jpg';
 import dishPouletGrille from '../assets/dish-poulet-grille.jpg';
 import dishBrochettes from "@/assets/dish-brochettes.jpg";
 import dishGrill from "@/assets/dish-grill.jpg";
+import dishAccras from "@/assets/dish-accras.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -46,6 +47,12 @@ const dishes = [
     desc: "Poulet mariné longuement dans nos épices maison, grillé au feu de charbon pour un goût fumé et authentique.",
     price: "16€",
     img: dishPouletGrille,
+    {
+    name: "Accras",
+    tagline: "Beignets de morue · sauce créole",
+    desc: "Accras croustillants, moelleux à l'intérieur, servis avec une sauce créole relevée.",
+    price: "6€",
+    img: dishAccras,
   },
 ];
 function Index() {
