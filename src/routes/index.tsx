@@ -47,6 +47,7 @@ const dishes = [
     desc: "Poulet mariné longuement dans nos épices maison, grillé au feu de charbon pour un goût fumé et authentique.",
     price: "4,90€",
     img: dishPouletGrille,
+    },
     {
     name: "Accras",
     tagline: "Beignets de morue · sauce créole",
